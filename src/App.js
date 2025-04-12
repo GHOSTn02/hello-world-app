@@ -10,10 +10,13 @@ const ButtonClick = () => {
 function App() {
   return (
     <>
-      <Container>
-        <h1>Hello, World!</h1>
-        <Button text="Кнопка" onClick={ButtonClick}/>
-      </Container>
+      <Container children1={
+        <> 
+          <h1>Hello, World!</h1>
+          <Button text="Кнопка" onClick={ButtonClick}/>
+        </>
+      }
+      children2={<p>some text</p>} />
     </>
   );
 };
